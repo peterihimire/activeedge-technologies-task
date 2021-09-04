@@ -7,6 +7,18 @@
   margin: 0 0 4rem 0;
   padding: 0 2rem;
   color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content h2 {
+  text-transform: uppercase;
+  font-size: var(--medium-large);
 }
 /* FOR VERTICAL CENTERING OF CONTENT */
 

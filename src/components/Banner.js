@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="banner">
       <div className="banner-container">
         <div className="banner-content">
-          {/* <h2>move-out list app</h2> */}
+          <h2>Artist Album App</h2>
         </div>
       </div>
     </div>
