@@ -1,0 +1,77 @@
+.artist-item-img {
+  width: 100%;
+}
+.artist-item-img img {
+  width: 100%;
+  height: 220px;
+  border-radius: 6px;
+}
+.price-bed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-shower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+/***** PROPERTY HOVER *****/
+.artist {
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.artist-card:hover {
+  transform: scale(1.05);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.artist:hover .artist-hover-options {
+  transform: translate(-50%, -50%) scale(1);
+  transition: var(--main-transition);
+}
+.artist-hover-options button {
+  border: none !important;
+}
+.artist-hover-options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  /* background-color: rgba(0, 0, 0, 0.604); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  transition: var(--main-transition);
+}
+.artist-options-icon-btn {
+  padding: 1rem;
+  font-size: 2rem !important;
+  background-color: var(--primary-color);
+  margin: 0 1rem;
+  color: var(--main-white);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  /* CENTERS ICON IN THE BUTTON */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+}
+.artist-options-icon-btn:hover {
+  background-color: var(--main-white);
+  color: var(--primary-color);
+  transition: var(--main-transition);
+  cursor: pointer;
+}

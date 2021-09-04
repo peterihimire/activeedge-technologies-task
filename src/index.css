@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-size: 62.5%;
+  --primary-color: #4f742d;
+  --grey-blue: #314862;
+  --main-grey: #e5e5e5;
+  --sec-grey: #f7f7f7;
+  --dark-green: #049a01;
+  --light-green: #f0ffee;
+  --dark-grey: #484848;
+  --main-white: #fff;
+  --main-black: #222;
+  --dark-blue: #0d019a;
+  --light-blue: #eef8ff;
+  --main-spacing: 0.2rem;
+  --line-height: 1.4;
+
+  --large-font: 5rem;
+  --medium-large: 4rem;
+  --medium-font: 2.5rem;
+  --small-font: 2rem;
+  --xsmall-font: 1.5rem;
+
+  --main-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+
+  --font: "lato", sans-serif;
+  --font-bold: "lato-bold", sans-serif;
+
+  --sec-font: "trueno", sans-serif;
+  --sec-font-bold: "trueno-bold", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--main-white);
+  overflow-x: hidden;
+  color: var(--main-black);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
 }

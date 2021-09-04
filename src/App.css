@@ -1,1 +1,29 @@
 
+/****** MAKES SURE CONTENT TAKE UP CONTAINER FULL HEIGHT  ******/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+/****** GIVES EXTRA BOTTOM SPACE FOR FOOTER TO FIT IN  ******/
+#content-wrapper {
+  padding-bottom: 216px;
+  /* width: 100% !important; */
+  /* overflow-x: scroll; */
+}
+/****** MAKES SURE CONTENT DONT LAP AGAINST CONTAINER WALL ******/
+.main-content {
+  padding: 0 2rem;
+}
+/****** MAKES SURE APP DONT TAKE UP THE CONTAINER FULL WIDTH ******/
+.main-content-container {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+/****** MAKES SURE FOOTER REMAINS AT THE BOTTOM WITHIN THE GIVEN BOTTOM SPACE ******/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 216px; /*Footer height*/
+  padding: 0 2rem;
+}

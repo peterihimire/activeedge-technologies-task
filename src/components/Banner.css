@@ -1,0 +1,22 @@
+.banner {
+  position: relative !important;
+  height: 20vh;
+  /* min-height: 600px; */
+  padding-top: 0;
+  background-color: var(--primary-color);
+  margin: 0 0 4rem 0;
+  padding: 0 2rem;
+  color: var(--main-white);
+}
+/* FOR VERTICAL CENTERING OF CONTENT */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+}
+/* LAPTOP */
+@media (min-width: 993px) {
+  .banner-container {
+    max-width: 117rem;
+    margin: 0 auto;
+  }
+}

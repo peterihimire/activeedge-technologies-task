@@ -1,0 +1,8 @@
+footer {
+  background-color: #eaeff3;
+  color: var(--main-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-transform: uppercase; */
+}
