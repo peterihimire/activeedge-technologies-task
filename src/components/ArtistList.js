@@ -1,20 +1,14 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import "./ArtistList.css";
 import ArtistItem from "./ArtistItem";
 
 const ArtistList = () => {
   const [artist, setArtist] = useState([]);
-  const [artistAlbum, setArtistAlbum] = useState([]);
+  // const [artistAlbum, setArtistAlbum] = useState([]);
   console.log(artist);
-  console.log(artistAlbum);
+  // console.log(artistAlbum);
 
-  const artistAlbumId = artistAlbum.map((album) => {
-    console.log(album);
-    console.log(album.id);
-    return album.id;
-  });
-  // artistAlbumId();
-  console.log(artistAlbumId);
+ 
 
   // GET ALL ARTIST
   const getArtistList = () => {
@@ -28,37 +22,37 @@ const ArtistList = () => {
       .catch((err) => console.log(err));
   };
 
-  // GET ALL ALBUM
-  const getArtistAlbum = () => {
-    fetch(`https://jsonplaceholder.typicode.com/albums`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.userId);
-        setArtistAlbum(data);
-      })
+  // // GET ALL ALBUM
+  // const getArtistAlbum = () => {
+  //   fetch(`https://jsonplaceholder.typicode.com/albums`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("This is page one " + data);
+  //       setArtistAlbum(data);
+  //     })
 
-      .catch((err) => console.log(err));
-  };
+  //     .catch((err) => console.log(err));
+  // };
 
-  const getArtistAlbumPhotos = useCallback(() => {
-    fetch(`https://jsonplaceholder.typicode.com/albums/${artist.id}/photos`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("This is the artist album" + data);
-        setArtistAlbum(data);
-      })
-      .then((albumData) => {
-        console.log(albumData);
-      })
-      .catch((err) => console.log(err));
-  }, [artist.id]);
+  // // ARTIST ALBUM
+  // const getArtistAlbumPhotos = useCallback(() => {
+  //   fetch(`https://jsonplaceholder.typicode.com/albums/${artist.id}/photos`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("This is the artist album" + data);
+  //       setArtistAlbum(data);
+  //     })
+  //     .then((albumData) => {
+  //       console.log(albumData);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, [artist.id]);
 
   //
   useEffect(() => {
     getArtistList();
-    getArtistAlbum();
-    getArtistAlbumPhotos();
-  }, [getArtistAlbumPhotos]);
+    // getArtistAlbum();
+  }, []);
 
   return (
     <div>
